@@ -13,13 +13,6 @@ jobs:
         with:
           asoc_key: ${{secrets.ASOC_KEY}}
           asoc_secret: ${{secrets.ASOC_SECRET}}
-      - uses: actions/publish-artifact@v3
-        name: publish CodeSweep scan result
-        with:
-          publish_on_merge: true
-          application_id: ${{vars.ASOC_APPID}}
-          issue_status: "inprogress"
-          scan_base_name: "CodeSweep"
-          personal_scan:true
+
     env: 
       GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
