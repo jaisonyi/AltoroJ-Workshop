@@ -69,3 +69,8 @@ Requirements are :
 ```docker build --name altoromutual .```
 3. Run the image
 ```docker run -p8080:8080 altoromutual```
+
+
+
+
+
