@@ -1,4 +1,4 @@
-name: "HCL AppScan SAST"
+name: "HCL AppScan SAST-Latest"
 on:
   workflow_dispatch
 jobs:
@@ -8,7 +8,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Run AppScan SAST scan
-        uses: HCL-TECH-SOFTWARE/appscan-sast-action@v1.0.4
+        uses: HCL-TECH-SOFTWARE/appscan-sast-action@v1.0.6
         with:
           asoc_key: ${{secrets.ASOC_KEY}}
           asoc_secret: ${{secrets.ASOC_SECRET}}
