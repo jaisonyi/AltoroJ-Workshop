@@ -352,6 +352,8 @@ public class DBUtil {
 			statement.execute("UPDATE ACCOUNTS SET BALANCE = " + (creditAccount.getBalance()+creditAmount) + " WHERE ACCOUNT_ID = " + creditAccount.getAccountId());
 			
 			return null;
+
+
 			
 		} catch (SQLException e) {
 			return "Transaction failed. Please try again later.";
